@@ -45,8 +45,8 @@ recomendador-peliculas-streamlit/
 ├── recomendador.py             # Script principal que carga la página e interactúa con las funciones
 ├── sentimental.py              # Función para análisis de sentimientos
 └── README.md                   # Documentación del proyecto
-
-
+```
+---
 
 ## 📊 Dataset
 El dataset utilizado, **df_recomendador3.csv**, contiene información detallada de películas, incluyendo:
