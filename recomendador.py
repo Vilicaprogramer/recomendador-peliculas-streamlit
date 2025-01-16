@@ -48,13 +48,13 @@ if button:
             # Mostramos un encabezado para cada película recomendada
             st.markdown(f':blue-background[**Película {i+1}**]')
             # Mostramos el título, año y director de la película, usando HTML para el espaciado
-            st.markdown(f"***Titulo:*** {recomendador.iloc[i]['titulo']}{' '*12}***Año:*** {str(int(recomendador.iloc[i]['ano']))}{' '*12}***Director:*** {recomendador.iloc[i]['director']}", unsafe_allow_html=True)
+            st.markdown(f"***Titulo:*** {recomendador.iloc[i]['titulo']}{' '*12}***Año:*** {'Sin año de estreno' if pd.isna(recomendador.iloc[i]['ano']) else int(recomendador.iloc[i]['ano'])}{' '*12}***Director:*** {recomendador.iloc[i]['director']}", unsafe_allow_html=True)
             # Mostramos los actores principales de la película
-            st.markdown(f"***Actores:*** {recomendador.iloc[i]['actor_1']},{' '*4}{recomendador.iloc[i]['actor_2']},{' '*4}{recomendador.iloc[i]['actor_3']}")
+            st.markdown(f"***Actores:*** {recomendador.iloc[i]['actor_1']},{' '*4}{recomendador.iloc[i]['actor_2']},{' '*4}{recomendador.iloc[i]['actor_3']}{' '*12}***Duración:*** {int(recomendador.iloc[i]['duracion'])} min", unsafe_allow_html=True)
             # Obtenemos los géneros de la película y los mostramos con espaciado
             generos = set([recomendador.iloc[i]['genero_1'], recomendador.iloc[i]['genero_2'], recomendador.iloc[i]['genero_3']])
             espacios = " " * 4
             generos_con_espacios = f",{espacios}".join(generos)
             st.markdown(f"***Géneros:*** {generos_con_espacios}", unsafe_allow_html=True)
             # Mostramos la sinopsis de la película en un área de texto
-            st.text_area("***Sinopsis***", recomendador.iloc[i]['sinopsis'], height=150)
+            st.text_area("***Sinopsis***", 'Sinopsis no disponible' if pd.isna(recomendador.iloc[i]['sinopsis']) else recomendador.iloc[i]['sinopsis'] , height=150)
