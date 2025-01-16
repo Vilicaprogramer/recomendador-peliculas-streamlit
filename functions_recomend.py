@@ -4,7 +4,7 @@ from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassifica
 df= pd.read_csv('df_sin_codificar_actores.csv')
 
 # Definimos una función para realizar análisis de sentimiento utilizando un modelo pre-entrenado
-def senrimental(opinion):
+def sentimental(opinion):
   # Consideramos el modelo SaBERT para análisis de sentimiento en español
   model_name = "VerificadoProfesional/SaBERT-Spanish-Sentiment-Analysis"
   # Cargamos el tokenizador y el modelo pre-entrenado
