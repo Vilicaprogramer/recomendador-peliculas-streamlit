@@ -54,3 +54,44 @@ El dataset utilizado, **df_recomendador3.csv**, contiene información detallada 
 - Actores principales 👥
 - Géneros 🎭
 - Sinopsis 📝
+
+---
+
+## 🖥️ ¿Cómo Usar el Recomendador?
+
+Sigue estos pasos para disfrutar de recomendaciones personalizadas de películas:
+
+1. **Ejecuta la Aplicación**  
+   - Clona el repositorio de forma local
+   - Asegúrate de tener instaladas las dependencias necesarias. 
+   - Desde la terminal, ejecuta el siguiente comando:  
+     ```bash
+     streamlit run recomendador.py
+     ```
+   - Esto abrirá la aplicación en tu navegador.
+
+2. **Selecciona una Película**  
+   - En el menú lateral de la aplicación, encontrarás un selector desplegable con una lista de películas disponibles.  
+   - Escoge la película que hayas visto o que te guste para recibir recomendaciones similares.
+
+3. **Da tu Opinión**  
+   - Valora la película seleccionada usando las estrellas que encontrarás en el menú lateral.  
+   - Escribe una opinión breve en el campo de texto proporcionado.  
+   - Haz clic en el botón "Enviar" para que tu feedback se procese.
+
+4. **Descubre Nuevas Películas**  
+   - La aplicación generará una lista de 5 películas recomendadas, basadas en tus selecciones y análisis de clustering.  
+   - Para cada recomendación, verás:
+     - **Título**  
+     - **Año de estreno**  
+     - **Director**  
+     - **Elenco principal**  
+     - **Géneros**  
+     - **Sinopsis**  
+
+5. **Explora y Disfruta**  
+   - Revisa las recomendaciones y elige tu próxima película para disfrutar. 🎬 
+
+Así de simple, ¡encuentra tu próxima película favorita! 🍿
+
+---
