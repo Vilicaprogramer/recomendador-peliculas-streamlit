@@ -28,21 +28,24 @@
 ---
 
 ## 📁 Estructura del Proyecto
-📂 recomendador-peliculas-streamlit
-├── 📂 __pycache__                # Archivos caché generados por Python
-├── 📄 .streamlit                # Configuración personalizada para Streamlit
-├── 📄 .gitattributes            # Configuraciones específicas para Git
-├── 📄 .gitignore                # Archivos y carpetas a ignorar por Git
-├── 📄 codificacion_generos.json # Archivo JSON con información de géneros codificados
-├── 📄 df_recomendador.csv       # Dataset inicial para recomendaciones tras aplicarle un KMeans
-├── 📄 df_recomendador2.csv      # Segunda versión del dataset en el que se hizo un primer HDBSCAN con menos volumen de películas.
-├── 📄 df_recomendador3.csv      # Dataset principal utilizado en la aplicación
-├── 📄 df_sin_codificar_actores.csv # Dataset base con el que se ha realizado todo el procesamiento
-├── 📄 functions_recomend.py     # Funciones personalizadas para recomendaciones
-├── 📄 recomendador.ipynb        # Notebook para análisis y pruebas de desarrollo
-├── 📄 recomendador.py           # Script principal que carga la página e interactúa con las funciones
-├── 📄 sentimental.py            # Función para análisis de sentimientos
-└── 📄 README.md                 # Documentación del proyecto
+
+```plaintext
+recomendador-peliculas-streamlit/
+├── __pycache__/                # Archivos caché generados por Python
+├── .streamlit/                 # Configuración personalizada para Streamlit
+├── .gitattributes              # Configuraciones específicas para Git
+├── .gitignore                  # Archivos y carpetas a ignorar por Git
+├── codificacion_generos.json   # Archivo JSON con información de géneros codificados
+├── df_recomendador.csv         # Dataset inicial para recomendaciones tras aplicarle un KMeans
+├── df_recomendador2.csv        # Segunda versión del dataset (primer HDBSCAN con menos datos)
+├── df_recomendador3.csv        # Dataset principal utilizado en la aplicación
+├── df_sin_codificar_actores.csv # Dataset base usado para procesamiento
+├── functions_recomend.py       # Funciones personalizadas para recomendaciones
+├── recomendador.ipynb          # Notebook para análisis y pruebas de desarrollo
+├── recomendador.py             # Script principal que carga la página e interactúa con las funciones
+├── sentimental.py              # Función para análisis de sentimientos
+└── README.md                   # Documentación del proyecto
+
 
 
 ## 📊 Dataset
