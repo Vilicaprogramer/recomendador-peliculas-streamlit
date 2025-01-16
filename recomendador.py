@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.cluster import KMeans
 
 # Cargamos el DataFrame que contiene información de las películas desde un archivo CSV
-df = pd.read_csv('df_recomendador2.csv')
+df = pd.read_csv('df_recomendador3.csv')
 
 # Creamos el título principal de la aplicación en Streamlit
 st.title('***Recomendador de :blue[peliculas]*** 🎬')
@@ -16,7 +16,7 @@ st.title('***Recomendador de :blue[peliculas]*** 🎬')
 st.subheader('_Bienvenido a la aplicación de recomendación de películas._')
 
 # Explicamos el funcionamiento de la aplicación
-st.write('En esta aplicación, podrás encontrar películas similares a las que hayas visto. Para ello, \
+st.write('En esta aplicación, podrás encontrar películas similares a las que has visto. Para ello, \
          selecciona una película de la lista y te recomendaremos 5 películas similares. ¡Disfruta de la experiencia!')
 
 # Creamos un selector desplegable en la barra lateral para que el usuario seleccione una película
