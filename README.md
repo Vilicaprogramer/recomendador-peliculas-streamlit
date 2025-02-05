@@ -22,7 +22,7 @@
 - **Streamlit**: Para crear la interfaz web interactiva.
 - **Pandas**: Manipulación de datos.
 - **NumPy**: Cálculos matemáticos eficientes.
-- **Scikit-learn**: Implementación de KMeans para clustering.
+- **Scikit-learn**: Implementación de HDBSCAN para clustering.
 - **Funciones personalizadas**: Manejo de recomendaciones y análisis de sentimientos.
 
 ---
